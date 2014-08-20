@@ -3,10 +3,6 @@ GettingCleaningDataProject
 
 By Su YANG
 
-==========================
-
-Repository for the course project of Getting and Cleaning Data course of university Johns Hopkins from Coursera
-
 The repository contains the following files:
 ====================================================
 
@@ -24,16 +20,22 @@ The repository contains the following files:
 
 Notes: 
 ======
+
 - Features are normalized and bounded within [-1,1].
+
 - Each feature vector is a row on the text file.
 
 ====================================================
+
 See 'CodeBook.md' for further explanations of how the code works. Ensure that the working directory is the submitted directory.
 Use setwd('path') with path the absolute path to the desired folder if not.
 
 Author:
 =========
 SU YANG
-FREQUENTED INSTITUTIONS: ECOLE POLYTECHNIQUE, ECOLE DES MINES DE PARIS, ECOLE TELECOM DE PARIS
-FOR GETTING AND CLEANING DATA COURSE OF UNIVERSITY JOHNS HOPKINS ON COURSERA.
+
+FREQUENTED INSTITUTIONS: ECOLE POLYTECHNIQUE, ECOLE DES MINES DE PARIS, ECOLE TELECOM DE PARIS.
+
+THIS PROJECT IS INTEDED FOR THE GETTING AND CLEANING DATA COURSE OF UNIVERSITY JOHNS HOPKINS ON COURSERA WEBSITE.
+
 AUGUST,20TH,2014
