@@ -73,7 +73,7 @@ dataRaw["activities"]=activities
 #compared to the initial raw data since we wish to add activities and
 #subjects as new variables.
 averagePerActivityAndPerSubject=data.frame(matrix(ncol=nVar+2,nrow = 0))
-colnames(averagePerActivityAndPerSubject)=colnames(dataRaw)
+colnames(averagePerActivityAndPerSubject)<-colnames(dataRaw)
 
 for (subject in 1:30) {
         #Extract the sub data frame containing only measurements of a single 
@@ -90,7 +90,7 @@ for (subject in 1:30) {
                 #Calculate means per column et transform it as a signle row
                 #dataframe of correct row name
                 tempActivity$activities=0
-                tempDataFrame = data.frame(t(colMeans(tempActivity)))
+                tempDataFrame = data.frame(t(colMeans(tempActivity)),check.names=F)
                 tempDataFrame$activities=activity
                 rownames(tempDataFrame)=nameTemp
                 
@@ -105,3 +105,6 @@ for (subject in 1:30) {
 #the readability
 write.table(averagePerActivityAndPerSubject,
             "averagePerActivityAndPerSubject.txt",quote=F)
+
+outputVariables <- colnames(averagePerActivityAndPerSubject)
+write.table(outputVariables,"features.txt",quote=F)
